@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/blue_light</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+
+
+    <color name="blue_light">#467fd7</color>
+    <color name="blue_dark">#0e3254</color>
+
+    <color name="bg_main">#eff1f8</color>
+
+
+
+
+</resources>

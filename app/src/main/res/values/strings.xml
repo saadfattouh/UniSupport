@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">UniSupport</string>
+    <string name="go_to_app">Go to App</string>
+    <string name="qoute">تتكىء الشجرة على الشجرة والانسان على اخيه</string>
+    <string name="sub_qoute">(وتعاونو على البر والتقوى)</string>
+    <string name="user_type">User type</string>
+    <string name="student">Student</string>
+    <string name="student_or_graduated">Student or graduated</string>
+    <string name="psychologist">Psychologist</string>
+    <string name="employee">Employee</string>
+    <string name="hint_first_name">First name</string>
+    <string name="hint_student_id">Student ID</string>
+    <string name="hint_last_name">Last name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_phone">Phone</string>
+    <string name="sign_up">Sign up</string>
+    <string name="hint_password">Password</string>
+    <string name="upload_certificate">Upload certificate</string>
+    <string name="hint_job_career">Job Career</string>
+    <string name="dont_have_an_account">Don\'t have an account ?</string>
+    <string name="already_have_an_account">Already have and account ?</string>
+    <string name="login">Login</string>
+    <string name="verify">Verify</string>
+    <string name="verification_code">Verification code</string>
+    <string name="code">Code</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="reactions">Reactions</string>
+    <string name="references">references</string>
+    <string name="tools">Tools</string>
+    <string name="useful">useful</string>
+    <string name="un_useful">unuseful</string>
+    <string name="good">good</string>
+    <string name="necessary">necessary</string>
+    <string name="brilliant">brilliant</string>
+    <string name="discuss_new_topic">Discuss new topic</string>
+    <string name="search">Search</string>
+</resources>

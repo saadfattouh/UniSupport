@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:theme="@style/Theme.MaterialComponents.Light.NoActionBar">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="@android:color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:textSize="40dp"
+            android:fontFamily="@font/lora_regular"
+            android:drawableEnd="@drawable/ic_book"
+            android:drawableTint="@color/blue_dark"
+            android:layout_marginBottom="40dp"
+            android:drawablePadding="30dp"/>
+
+        <LinearLayout
+            android:layout_below="@id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/user_type"
+                    android:layout_weight="2"
+                    android:textSize="18sp"
+                    android:paddingEnd="12dp"
+                    android:paddingBottom="12dp"
+                    android:layout_marginStart="16dp"/>
+
+                <RadioGroup
+                    android:id="@+id/type_chooser"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:alpha="0.6"
+                        android:layout_marginEnd="8dp"
+                        android:background="@android:color/black"/>
+
+                    <RadioButton
+                        android:id="@+id/student"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:textSize="16sp"
+                        android:text="@string/student_or_graduated"
+                        android:paddingStart="16dp"
+                        android:buttonTint="@color/blue_light"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:alpha="0.6"
+                        android:layout_marginEnd="8dp"
+                        android:background="@android:color/black"/>
+
+
+                    <RadioButton
+                        android:id="@+id/psychologist"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:paddingStart="16dp"
+                        android:textSize="16sp"
+                        android:text="@string/psychologist"
+                        android:buttonTint="@color/blue_light"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:alpha="0.6"
+                        android:layout_marginEnd="8dp"
+                        android:background="@android:color/black"/>
+
+
+                    <RadioButton
+                        android:id="@+id/employee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:textSize="16sp"
+                        android:paddingStart="16dp"
+                        android:text="@string/employee"
+                        android:buttonTint="@color/blue_light"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:alpha="0.6"
+                        android:layout_marginEnd="8dp"
+                        android:background="@android:color/black" />
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/student_id_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hint_student_id"
+                    android:layout_weight="2"
+                    android:textSize="16sp"
+                    android:paddingStart="12dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginStart="16dp"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="5"
+                    android:layout_marginEnd="16dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/st_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_student_id"
+                        android:inputType="text"
+                        android:textSize="14sp"
+                        android:paddingBottom="12dp"
+                        android:layout_marginStart="16dp"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hint_first_name"
+                    android:layout_weight="2"
+                    android:textSize="16sp"
+                    android:paddingStart="12dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginStart="16dp"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="5"
+                    android:layout_marginEnd="16dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/first_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_first_name"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:paddingBottom="12dp"
+                        android:layout_marginStart="16dp"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hint_last_name"
+                    android:layout_weight="2"
+                    android:textSize="16sp"
+                    android:paddingStart="12dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginStart="16dp"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="5"
+                    android:layout_marginEnd="16dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/last_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_last_name"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:paddingBottom="12dp"
+                        android:layout_marginStart="16dp"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hint_email"
+                    android:layout_weight="2"
+                    android:textSize="16sp"
+                    android:paddingStart="12dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginStart="16dp"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="5"
+                    android:layout_marginEnd="16dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_email"
+                        android:inputType="textEmailAddress"
+                        android:textSize="14sp"
+                        android:paddingBottom="12dp"
+                        android:layout_marginStart="16dp"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hint_phone"
+                    android:layout_weight="2"
+                    android:textSize="16sp"
+                    android:paddingStart="12dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginStart="16dp"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="5"
+                    android:layout_marginEnd="16dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_phone"
+                        android:inputType="phone"
+                        android:textSize="14sp"
+                        android:paddingBottom="12dp"
+                        android:layout_marginStart="16dp"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hint_password"
+                    android:layout_weight="2"
+                    android:textSize="16sp"
+                    android:paddingStart="12dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginStart="16dp"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="5"
+                    android:layout_marginEnd="16dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_password"
+                        android:inputType="textPassword"
+                        android:textSize="14sp"
+                        android:paddingBottom="12dp"
+                        android:layout_marginStart="16dp"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/employee_career_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="2"
+                    android:paddingStart="12dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/hint_job_career"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_weight="5">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/job_career"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:hint="@string/hint_job_career"
+                        android:inputType="text"
+                        android:paddingBottom="12dp"
+                        android:textSize="14sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/psychologist_upload_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/upload_certificate"
+                    android:layout_weight="4"
+                    android:textSize="16sp"
+                    android:padding="16dp"
+                    android:layout_marginStart="16dp"/>
+
+               <ImageView
+                   android:id="@+id/upload_btn"
+                   android:layout_width="0dp"
+                   android:layout_height="60dp"
+                   android:layout_weight="3"
+                   android:src="@drawable/ic_upload"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/signup_btn"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/sign_up"
+                android:background="@color/blue_light"
+                android:layout_marginBottom="16dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/qoute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/blue_dark"
+                android:text="@string/already_have_an_account"/>
+
+
+            <Button
+                android:id="@+id/login_btn"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="@string/login"
+                android:background="@color/blue_light"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="30dp"/>
+
+
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>
+
+
