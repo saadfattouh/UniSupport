@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg_main"
+    tools:context=".student.fragments.AdministrativesFragment">
+
+    <LinearLayout
+        android:id="@+id/root_layout_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:clipToPadding="false">
+
+        <com.kekstudio.dachshundtablayout.DachshundTabLayout
+            android:id="@+id/administratives_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@color/blue_light"
+            app:ddAnimatedIndicator="lineMove"
+            app:ddIndicatorColor="@color/colorPrimary"
+            app:tabTextColor="@android:color/black"
+            app:tabRippleColor="@android:color/transparent"
+            />
+
+        <!--get the custom rounds from this url
+            https://github.com/captain-miao/OptionRoundCardview-->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            android:paddingTop="10dp"
+            android:background="@color/bg_main"
+            >
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

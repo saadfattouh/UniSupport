@@ -2,14 +2,26 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.unisupport">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".employee.MainActivityEmployee"></activity>
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".student.StudentsActivity"></activity>
+        <activity android:name=".employee.AddPageActivity" />
+        <activity android:name=".student.PublicChatActivity" />
+        <activity android:name=".psychologist.AddReplayPsychologistActivity" />
+        <activity android:name=".employee.AddReplyActivity" />
+        <activity android:name=".student.PsychologistReplyViewActivity" />
+        <activity android:name=".student.ChatActivity" />
+        <activity android:name=".employee.MainActivityEmployee" />
         <activity android:name=".psychologist.MainActivityPsychologist" />
         <activity android:name=".VerifyAccountActivity" />
         <activity android:name=".LoginActivity" />

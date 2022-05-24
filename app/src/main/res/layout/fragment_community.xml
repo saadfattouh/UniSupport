@@ -10,37 +10,77 @@
 
 
     <TextView
+        android:id="@+id/add_post"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:layout_marginTop="16dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
         android:gravity="center"
         android:background="@android:color/white"
         android:drawableEnd="@drawable/ic_forward"
         android:paddingEnd="16dp"
         android:paddingStart="16dp"
-        android:textSize="18sp"
+        android:textSize="16sp"
         android:text="@string/discuss_new_topic"/>
 
+    <RadioGroup
+        android:id="@+id/content_type_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/posts"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:checked="true"
+            android:textColor="@color/white"
+            android:background="@drawable/reaction_button_state_bg"
+            android:text="@string/posts"/>
+
+        <RadioButton
+            android:id="@+id/pages"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:layout_weight="1"
+            android:layout_marginStart="16dp"
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:background="@drawable/reaction_button_state_bg"
+            android:text="@string/lights"/>
+
+    </RadioGroup>
 
     <androidx.appcompat.widget.SearchView
+        android:id="@+id/search_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/bg_post"
         android:layout_marginTop="8dp"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
-        android:layout_marginBottom="8dp"
         app:queryHint="@string/search" />
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             tools:listitem="@layout/item_post"
             android:orientation="vertical"/>
+
     </androidx.core.widget.NestedScrollView>
 
 

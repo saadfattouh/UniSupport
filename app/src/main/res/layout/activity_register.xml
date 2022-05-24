@@ -23,7 +23,6 @@
             android:textSize="40dp"
             android:fontFamily="@font/lora_regular"
             android:drawableEnd="@drawable/ic_book"
-            android:drawableTint="@color/blue_dark"
             android:layout_marginBottom="40dp"
             android:drawablePadding="30dp"/>
 
@@ -138,13 +137,13 @@
                     android:layout_width="0dp"
                     android:layout_height="50dp"
                     android:layout_weight="5"
+                    android:hint="@string/hint_student_id"
                     android:layout_marginEnd="16dp"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/st_id"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="@string/hint_student_id"
                         android:inputType="text"
                         android:textSize="14sp"
                         android:paddingBottom="12dp"
@@ -175,13 +174,13 @@
                     android:layout_width="0dp"
                     android:layout_height="50dp"
                     android:layout_weight="5"
+                    android:hint="@string/hint_first_name"
                     android:layout_marginEnd="16dp"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/first_name"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="@string/hint_first_name"
                         android:inputType="textPersonName"
                         android:textSize="14sp"
                         android:paddingBottom="12dp"
@@ -211,13 +210,13 @@
                     android:layout_width="0dp"
                     android:layout_height="50dp"
                     android:layout_weight="5"
+                    android:hint="@string/hint_last_name"
                     android:layout_marginEnd="16dp"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/last_name"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="@string/hint_last_name"
                         android:inputType="textPersonName"
                         android:textSize="14sp"
                         android:paddingBottom="12dp"
@@ -247,13 +246,13 @@
                     android:layout_width="0dp"
                     android:layout_height="50dp"
                     android:layout_weight="5"
+                    android:hint="@string/hint_email"
                     android:layout_marginEnd="16dp"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/email"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="@string/hint_email"
                         android:inputType="textEmailAddress"
                         android:textSize="14sp"
                         android:paddingBottom="12dp"
@@ -284,13 +283,13 @@
                     android:layout_width="0dp"
                     android:layout_height="50dp"
                     android:layout_weight="5"
+                    android:hint="@string/hint_phone"
                     android:layout_marginEnd="16dp"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/phone"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="@string/hint_phone"
                         android:inputType="phone"
                         android:textSize="14sp"
                         android:paddingBottom="12dp"
@@ -320,13 +319,13 @@
                     android:layout_width="0dp"
                     android:layout_height="50dp"
                     android:layout_weight="5"
+                    android:hint="@string/hint_password"
                     android:layout_marginEnd="16dp"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/password"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="@string/hint_password"
                         android:inputType="textPassword"
                         android:textSize="14sp"
                         android:paddingBottom="12dp"
@@ -336,6 +335,40 @@
 
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/hint_password_retype"
+                    android:layout_weight="2"
+                    android:textSize="16sp"
+                    android:paddingStart="12dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="16dp"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="5"
+                    android:hint="@string/hint_password"
+                    android:layout_marginEnd="16dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/password_retype"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:textSize="14sp"
+                        android:paddingBottom="12dp"
+                        android:layout_marginStart="16dp"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/employee_career_layout"
@@ -358,6 +391,7 @@
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="0dp"
                     android:layout_height="50dp"
+                    android:hint="@string/hint_job_career"
                     android:layout_marginEnd="16dp"
                     android:layout_weight="5">
 
@@ -366,7 +400,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
-                        android:hint="@string/hint_job_career"
                         android:inputType="text"
                         android:paddingBottom="12dp"
                         android:textSize="14sp" />
@@ -397,6 +430,30 @@
                    android:layout_height="60dp"
                    android:layout_weight="3"
                    android:src="@drawable/ic_upload"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/user_profile_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/upload_your_image"
+                    android:layout_weight="4"
+                    android:textSize="16sp"
+                    android:padding="16dp"
+                    android:layout_marginStart="16dp"/>
+
+                <ImageView
+                    android:id="@+id/upload_image_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="3"
+                    android:src="@drawable/ic_baseline_add_photo"/>
             </LinearLayout>
 
             <Button

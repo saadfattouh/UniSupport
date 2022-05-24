@@ -7,11 +7,13 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.example.unisupport.employee.MainActivityEmployee;
 import com.example.unisupport.student.MainActivityStudent;
+import com.google.android.material.textfield.TextInputEditText;
 
 public class VerifyAccountActivity extends AppCompatActivity {
 
-    EditText mCodeEt;
+    TextInputEditText mCodeEt;
     Button mVerifyBtn;
 
     @Override

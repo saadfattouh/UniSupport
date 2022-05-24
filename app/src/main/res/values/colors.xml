@@ -12,6 +12,12 @@
     <color name="bg_main">#eff1f8</color>
 
 
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    
+    <color name="rose">#DF6589</color>
+    <color name="purple">#3C1053</color>
+
 
 
 </resources>
